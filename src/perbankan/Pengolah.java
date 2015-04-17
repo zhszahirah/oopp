@@ -40,11 +40,19 @@ public class Pengolah {
          
          //Data Nasabah
          nasabah1.setAlamatNasabah(alamatNasabah1);
-         nasabah1.setNama(NamaNasabah);
+         try {
+             nasabah1.setNama(NamaNasabah);
+         } catch (Exception e) {
+         }
+
          nasabah1.setNoKtp(78676857);
          
          //teller 
-         teller1.setNama("Rebeca");
+         try {
+             teller1.setNama("Rebeca");
+         } catch (Exception e) {
+         }
+
          teller1.setId("ss123");
          
          //Transaksi
